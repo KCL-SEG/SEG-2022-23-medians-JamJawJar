@@ -8,5 +8,15 @@ while True:
     except ValueError:
         print("Some input could not be converted to a number!")
     else:
+        numbers.sort()
+        middleLocation = (len(numbers) //2)
+        if (len(numbers) % 2 == 0):
+            print((numbers[middleLocation] + numbers[middleLocation - 1]) / 2)
+        else:
+            print(numbers[middleLocation])
         break
-print(numbers)
+
+    
+
+
+#print(numbers)
